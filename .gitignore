@@ -1,0 +1,127 @@
+# ============================================================
+# Unreal Engine
+# Rules work regardless of project directory location
+# ============================================================
+
+# ----------------------------
+# Unreal Engine generated data
+# ----------------------------
+
+**/Binaries/
+**/DerivedDataCache/
+**/Intermediate/
+**/Saved/
+
+# Generated plugin data
+**/Plugins/*/Binaries/
+**/Plugins/*/Intermediate/
+
+# Developer plugins
+**/Plugins/Developer/
+
+# ----------------------------
+# Unreal Engine build data
+# ----------------------------
+
+**/Build/*
+
+# Keep Build directories so exceptions below can work
+!**/Build/*/
+
+# Ignore Build contents
+**/Build/*/**
+
+# Keep PakBlacklist files
+!**/Build/*/PakBlacklist*.txt
+
+# Keep icon files
+!**/Build/**/*.ico
+
+# Built map data
+**/*_BuiltData.uasset
+
+# ----------------------------
+# Unreal generated project files
+# ----------------------------
+
+*.xcodeproj
+*.xcworkspace
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# ----------------------------
+# Visual Studio / JetBrains
+# ----------------------------
+
+**/.vs/
+**/.idea/
+
+.vsconfig
+
+# ----------------------------
+# Compiled object files
+# ----------------------------
+
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled headers
+*.gch
+*.pch
+
+# ----------------------------
+# Compiled libraries
+# ----------------------------
+
+*.so
+*.dylib
+*.dll
+
+*.lai
+*.la
+*.a
+*.lib
+
+# Fortran module files
+*.mod
+
+# ----------------------------
+# Executables
+# ----------------------------
+
+*.exe
+*.out
+*.app
+*.ipa
+
+# ----------------------------
+# Unreal platform/generated config
+# ----------------------------
+
+**/Config/steamvr_ue_editor_app.json
+**/Config/SteamVRBindings/
+**/Platforms/HoloLens/Config/HoloLensEngine.ini
+
+# ----------------------------
+# OS generated files
+# ----------------------------
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------
+# Temporary / backup files
+# ----------------------------
+
+*.tmp
+*.temp
+*.bak
+*.log
+*~
